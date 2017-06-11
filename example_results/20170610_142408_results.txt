@@ -1,0 +1,70 @@
+20170610_142408
+D:\PyCharm\inz\BAZA_GLOWNA_best
+
+
+Multithreading ON, number of threads: 8
+Removed 0 images
+Number of images: 233
+Runtime of Iris: 18.924995183944702
+1012 tests
+Runtime of Hamming intraclass: 11.259623050689697
+26016 tests
+Runtime of Hamming interclass: 205.06377959251404
+
+
+Decidability: 4.618557680047807
+Mean intraclass: 0.30507376778656126
+Mean interclass: 0.47566889360393605
+Standard deviation intraclass: 0.05033167064712823
+Standard deviation interclass: 0.013978183662803633
+
+
+Current parameters:
+Hamming distance - howManyShifts: 8
+--- SEGMENTATION ---
+
+# preprocessing #
+
+cannyLowThreshold = 22
+cannyHighThreshold = 24
+
+# finding pupil and iris #
+
+houghHighThreshold = 254
+houghAccumulatorThreshold = 40
+
+houghHowManyCircles = 7
+houghHowManyExtremal = 1
+
+pupilMinRadius = 20
+pupilMaxRadius = 70
+
+irisMinRadius = 90
+irisMaxRadius = 120
+
+# finding eyelids #
+
+eyelidOffsetCoef = 0.03
+eyelidMinRadiusCoef = 0.05
+eyelidMaxRadiusCoef = 0.2
+eyelidHeightRes = 10
+eyelidScaleYCoef = 0.9
+eyelidRadiusStep = 2
+
+--- NORMALISATION ---
+
+# rubber #
+
+rubberWidth = 560
+rubberHeight = 20
+
+# mask #
+
+maskLowThreshold = 36
+maskHighThreshold = 255
+maskSobelEdgeThreshold = 255
+
+--- ENCODING ---
+
+gaborWavelength = 28
+gaborSigmaOnf = 0.5
