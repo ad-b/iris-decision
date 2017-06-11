@@ -1,0 +1,9 @@
+D:\\PyCharm\\inz\\Iris\\x64\\Release\\Iris.exe
+D:\\PyCharm\\inz\\Iris\\x64\\Release\\Hamming.exe
+D:\PyCharm\inz\BAZA_GLOWNA_best
+(\d{3}[LP])_(\d{2})
+D:\\PyCharm\\inz\\Iris\\Iris\\config.txt
+
+
+(\d{3}[LP])_(\d{2})
+([a-zA-Z]+)(\d+)
