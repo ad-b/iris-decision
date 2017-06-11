@@ -1,0 +1,313 @@
+20170611_235252
+D:\PyCharm\inz\BAZA_GLOWNA_best
+
+
+Multithreading ON, number of threads: 8
+Parameters to change: rubberHeight rubberWidth 
+Possible values of parameters: [(15.0, 540.0), (15.0, 560.0), (20.0, 540.0), (20.0, 560.0)]
+
+-------CSV-------
+
+20170611_235252
+D:\PyCharm\inz\BAZA_GLOWNA_best
+
+
+Multithreading ON, number of threads: 8
+Changed parameter rubberHeight to: 15
+Changed parameter rubberWidth to: 540
+Removed 0 images
+Number of images: 233
+Runtime of Iris: 16.520309925079346
+1012 tests
+Runtime of Hamming intraclass: 10.076151132583618
+26016 tests
+Runtime of Hamming interclass: 187.61346197128296
+
+
+Decidability: 4.591208168999399
+Mean intraclass: 0.30138515909090907
+Mean interclass: 0.47477647451568267
+Standard deviation intraclass: 0.051326832427049766
+Standard deviation interclass: 0.014767853062828764
+
+
+Current parameters:
+Hamming distance - howManyShifts: 8
+--- SEGMENTATION ---
+
+# preprocessing #
+
+cannyLowThreshold = 22
+cannyHighThreshold = 24
+
+# finding pupil and iris #
+
+houghHighThreshold = 254
+houghAccumulatorThreshold = 40
+
+houghHowManyCircles = 7
+houghHowManyExtremal = 1
+
+pupilMinRadius = 20
+pupilMaxRadius = 70
+
+irisMinRadius = 90
+irisMaxRadius = 120
+
+# finding eyelids #
+
+eyelidOffsetCoef = 0.03
+eyelidMinRadiusCoef = 0.05
+eyelidMaxRadiusCoef = 0.2
+eyelidHeightRes = 10
+eyelidScaleYCoef = 0.9
+eyelidRadiusStep = 2
+
+--- NORMALISATION ---
+
+# rubber #
+
+rubberWidth = 540
+rubberHeight = 15
+
+# mask #
+
+maskLowThreshold = 36
+maskHighThreshold = 255
+maskSobelEdgeThreshold = 255
+
+--- ENCODING ---
+
+gaborWavelength = 28
+gaborSigmaOnf = 0.5
+
+
+-----***-----
+
+20170611_235252
+D:\PyCharm\inz\BAZA_GLOWNA_best
+
+
+Multithreading ON, number of threads: 8
+No changes to parameter rubberHeight, value left: 15
+Changed parameter rubberWidth to: 560
+Removed 0 images
+Number of images: 233
+Runtime of Iris: 15.935305118560791
+1012 tests
+Runtime of Hamming intraclass: 8.724185705184937
+26016 tests
+Runtime of Hamming interclass: 179.1634337902069
+
+
+Decidability: 4.602096725304599
+Mean intraclass: 0.3039635138339921
+Mean interclass: 0.47513555811808117
+Standard deviation intraclass: 0.05057096783854749
+Standard deviation interclass: 0.014471285562446489
+
+
+Current parameters:
+Hamming distance - howManyShifts: 8
+--- SEGMENTATION ---
+
+# preprocessing #
+
+cannyLowThreshold = 22
+cannyHighThreshold = 24
+
+# finding pupil and iris #
+
+houghHighThreshold = 254
+houghAccumulatorThreshold = 40
+
+houghHowManyCircles = 7
+houghHowManyExtremal = 1
+
+pupilMinRadius = 20
+pupilMaxRadius = 70
+
+irisMinRadius = 90
+irisMaxRadius = 120
+
+# finding eyelids #
+
+eyelidOffsetCoef = 0.03
+eyelidMinRadiusCoef = 0.05
+eyelidMaxRadiusCoef = 0.2
+eyelidHeightRes = 10
+eyelidScaleYCoef = 0.9
+eyelidRadiusStep = 2
+
+--- NORMALISATION ---
+
+# rubber #
+
+rubberWidth = 560
+rubberHeight = 15
+
+# mask #
+
+maskLowThreshold = 36
+maskHighThreshold = 255
+maskSobelEdgeThreshold = 255
+
+--- ENCODING ---
+
+gaborWavelength = 28
+gaborSigmaOnf = 0.5
+
+
+-----***-----
+
+20170611_235252
+D:\PyCharm\inz\BAZA_GLOWNA_best
+
+
+Multithreading ON, number of threads: 8
+Changed parameter rubberHeight to: 20
+Changed parameter rubberWidth to: 540
+Removed 0 images
+Number of images: 233
+Runtime of Iris: 15.40795350074768
+1012 tests
+Runtime of Hamming intraclass: 9.026796340942383
+26016 tests
+Runtime of Hamming interclass: 182.87279319763184
+
+
+Decidability: 4.65072333001185
+Mean intraclass: 0.3020274565217391
+Mean interclass: 0.47522033210332104
+Standard deviation intraclass: 0.05069072035124455
+Standard deviation interclass: 0.014285800963637121
+
+
+Current parameters:
+Hamming distance - howManyShifts: 8
+--- SEGMENTATION ---
+
+# preprocessing #
+
+cannyLowThreshold = 22
+cannyHighThreshold = 24
+
+# finding pupil and iris #
+
+houghHighThreshold = 254
+houghAccumulatorThreshold = 40
+
+houghHowManyCircles = 7
+houghHowManyExtremal = 1
+
+pupilMinRadius = 20
+pupilMaxRadius = 70
+
+irisMinRadius = 90
+irisMaxRadius = 120
+
+# finding eyelids #
+
+eyelidOffsetCoef = 0.03
+eyelidMinRadiusCoef = 0.05
+eyelidMaxRadiusCoef = 0.2
+eyelidHeightRes = 10
+eyelidScaleYCoef = 0.9
+eyelidRadiusStep = 2
+
+--- NORMALISATION ---
+
+# rubber #
+
+rubberWidth = 540
+rubberHeight = 20
+
+# mask #
+
+maskLowThreshold = 36
+maskHighThreshold = 255
+maskSobelEdgeThreshold = 255
+
+--- ENCODING ---
+
+gaborWavelength = 28
+gaborSigmaOnf = 0.5
+
+
+-----***-----
+
+20170611_235252
+D:\PyCharm\inz\BAZA_GLOWNA_best
+
+
+Multithreading ON, number of threads: 8
+No changes to parameter rubberHeight, value left: 20
+Changed parameter rubberWidth to: 560
+Removed 0 images
+Number of images: 233
+Runtime of Iris: 15.505606412887573
+1012 tests
+Runtime of Hamming intraclass: 11.251978397369385
+26016 tests
+Runtime of Hamming interclass: 212.82219052314758
+
+
+Decidability: 4.618557680047807
+Mean intraclass: 0.30507376778656126
+Mean interclass: 0.47566889360393605
+Standard deviation intraclass: 0.05033167064712823
+Standard deviation interclass: 0.013978183662803633
+
+
+Current parameters:
+Hamming distance - howManyShifts: 8
+--- SEGMENTATION ---
+
+# preprocessing #
+
+cannyLowThreshold = 22
+cannyHighThreshold = 24
+
+# finding pupil and iris #
+
+houghHighThreshold = 254
+houghAccumulatorThreshold = 40
+
+houghHowManyCircles = 7
+houghHowManyExtremal = 1
+
+pupilMinRadius = 20
+pupilMaxRadius = 70
+
+irisMinRadius = 90
+irisMaxRadius = 120
+
+# finding eyelids #
+
+eyelidOffsetCoef = 0.03
+eyelidMinRadiusCoef = 0.05
+eyelidMaxRadiusCoef = 0.2
+eyelidHeightRes = 10
+eyelidScaleYCoef = 0.9
+eyelidRadiusStep = 2
+
+--- NORMALISATION ---
+
+# rubber #
+
+rubberWidth = 560
+rubberHeight = 20
+
+# mask #
+
+maskLowThreshold = 36
+maskHighThreshold = 255
+maskSobelEdgeThreshold = 255
+
+--- ENCODING ---
+
+gaborWavelength = 28
+gaborSigmaOnf = 0.5
+
+
+-----***-----

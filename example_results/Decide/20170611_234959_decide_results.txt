@@ -1,0 +1,67 @@
+Multithreading ON, number of threads: 8
+20170611_234959
+D:\PyCharm\inz\BAZA_GLOWNA_best
+D:\\PyCharm\\inz\\test\\005P_07.bmp
+
+
+Removed 0 images
+Number of images: 1
+
+Runtime of Iris: 2.7914910316467285
+
+Criterion set to: 0.41
+
+005P_07 - best match for image 005P_07.bmp, hd = 0.0
+All matched images: [('005P_01.bmp', 0.327631), ('005P_02.bmp', 0.283164), ('005P_03.bmp', 0.30077), ('005P_04.bmp', 0.318754), ('005P_05.bmp', 0.256369), ('005P_06.bmp', 0.275962), ('005P_07.bmp', 0.0), ('005P_08.bmp', 0.320461), ('005P_09.bmp', 0.249451), ('005P_10.bmp', 0.279101)]
+
+Runtime of Hamming compare: 3.9863266944885254
+
+Current parameters:
+Hamming distance - howManyShifts: 8
+--- SEGMENTATION ---
+
+# preprocessing #
+
+cannyLowThreshold = 22
+cannyHighThreshold = 24
+
+# finding pupil and iris #
+
+houghHighThreshold = 254
+houghAccumulatorThreshold = 40
+
+houghHowManyCircles = 7
+houghHowManyExtremal = 1
+
+pupilMinRadius = 20
+pupilMaxRadius = 70
+
+irisMinRadius = 90
+irisMaxRadius = 120
+
+# finding eyelids #
+
+eyelidOffsetCoef = 0.03
+eyelidMinRadiusCoef = 0.05
+eyelidMaxRadiusCoef = 0.2
+eyelidHeightRes = 10
+eyelidScaleYCoef = 0.9
+eyelidRadiusStep = 2
+
+--- NORMALISATION ---
+
+# rubber #
+
+rubberWidth = 560
+rubberHeight = 20
+
+# mask #
+
+maskLowThreshold = 36
+maskHighThreshold = 255
+maskSobelEdgeThreshold = 255
+
+--- ENCODING ---
+
+gaborWavelength = 28
+gaborSigmaOnf = 0.5
