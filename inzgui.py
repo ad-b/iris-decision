@@ -39,7 +39,7 @@ class MainWindow(QMainWindow, Ui_MainWindow):
         self.lFile.setPixmap(pixmap)
 
     def write_hello(self):
-        hello_string = "Cześć Adjam :)"
+        hello_string = "Cześć :)"
         self.textOutput.append(hello_string)
 
 
