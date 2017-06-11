@@ -10,7 +10,7 @@ Python part was designed to consist of two seperate files `Decide.py` and `IrisD
 This script encodes iris from an image of an eye and compares it with all iris codes in database. Given criterion treshold, information about recognition is returned. Information about comparisions and results are saved in .txt. Comparisons can be run with multithreading.
 
 ### `IrisDecision.py`
-This script performes testing of whole sytem using given algorithm parameters. It encodes irises from all images of eyes in database, creates sets of intra-class (the same irises) and inter-class (different irises) comparisions, performes them and as a result information about decidability is returned. Decidability parameter defines how wide distributions of both classes are. Bigger decidability provides less errors during comparisons.
+This script performs testing of whole sytem using given algorithm parameters. It encodes irises from all images of eyes in database, creates sets of intra-class (the same irises) and inter-class (different irises) comparisions, performs them and as a result information about decidability is returned. Decidability parameter defines how wide distributions of both classes are. Bigger decidability provides less errors during comparisons.
 Additional features: 
 - saving charts of class distributions, results of comparisions and results of testing whole system
 - changing multiple algorithm parameters in given range and testing whole system for each given set of parameters
@@ -18,7 +18,7 @@ Additional features:
 - calculating error rates and proposing criterion threshold
 
 ### GUI
-In development. What works: opening an image, encoding iris form image, running `Decide.py`, showing results.
+Under development. What works: opening an image, encoding iris form image, running `Decide.py`, showing results.
 
 ## Used libraries
 - (Python Standard Library)
