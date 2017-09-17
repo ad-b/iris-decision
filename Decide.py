@@ -192,11 +192,10 @@ def hd_process(comparisons, hd_db, suffix='.txt'):
         for comparison in comparisons:
             hd_results.append(run_hamming(comparison))
 
-    savefile = open(results_path + 'decide_' + suffix + '.txt', 'w')
-    for result in hd_results:
-        hd_db.append(result[0])
-        savefile.write(result[1] + '\n')
-    savefile.close()
+    with open(results_path + 'decide_' + suffix + '.txt', 'w') as savefile:
+        for result in hd_results:
+            hd_db.append(result[0])
+            savefile.write(result[1] + '\n')
 
 
 @log_time(hd_compare_name)
@@ -220,23 +219,21 @@ def hd_compare():
 def save_parameters():
     results.append('\nCurrent parameters:')
     results.append('Hamming distance - howManyShifts: {0}'.format(howManyShifts))
-    parameters_file = open(configPath, 'r')
-    for line in parameters_file:
-        results.append(line[:-1])
-    parameters_file.close()
+    with open(configPath, 'r') as parameters_file:
+        for line in parameters_file:
+            results.append(line[:-1])
 
 
 def read_settings():
     if os.path.exists('settings.txt'):
-        file_settings = open('settings.txt', 'r')
-        settings = file_settings.read().splitlines()
-        global irisExePath, hammingExePath, databasePath, regex, files, configPath
-        irisExePath = settings[0]
-        hammingExePath = settings[1]
-        databasePath = settings[2]
-        regex = settings[3]
-        configPath = settings[4]
-        file_settings.close()
+        with open('settings.txt', 'r') as file_settings:
+            settings = file_settings.read().splitlines()
+            global irisExePath, hammingExePath, databasePath, regex, files, configPath
+            irisExePath = settings[0]
+            hammingExePath = settings[1]
+            databasePath = settings[2]
+            regex = settings[3]
+            configPath = settings[4]
     else:
         print("settings.txt doesn't exist")
         sys.exit(-1)
@@ -414,9 +411,8 @@ def main():
     hd_compare()
     save_parameters()
 
-    results_file = open(results_path + 'decide_results.txt', 'a')
-    results_file.write("\n".join(results))
-    results_file.close()
+    with open(results_path + 'decide_results.txt', 'a') as results_file:
+        results_file.write("\n".join(results))
 
     print("Runtime of whole process: {0} seconds".format(time.time() - start_time))
     sys.exit(0)
